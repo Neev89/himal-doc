@@ -1,696 +1,861 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Himal Doc</title>
-		<link rel="stylesheet" href="/build/css/tailwind.css" />
-		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script
-			nomodule=""
-			src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
-		></script>
-	</head>
-	<body class="font-body antialiased text-gray-dark leading-normal">
-		<!-- Header -->
-		<header class="bg-white">
-			<!-- Top -->
-			<div class="py-16  bg-gray-lighter">
-				<div
-					class="px-16 lg:px-0 container mx-auto flex items-center justify-end"
-				>
-					<ul class="flex items-center">
-						<li class="mr-16">
-							<a class="text-sm inline-block hover:text-blue-hover" href="#"
-								>Upload</a
-							>
-						</li>
-						<li class="mr-16">
-							<a class="text-sm inline-block hover:text-blue-hover" href="#"
-								>Login</a
-							>
-						</li>
-						<li>
-							<a class="text-sm inline-block hover:text-blue-hover" href="#"
-								>Register</a
-							>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- End Top -->
-			<!-- Navigation -->
-			<div class="py-24 bg-white">
-				<div class="px-16 lg:px-0 container mx-auto">
-					<div class="flex items-center justify-between">
-						<div>
-							<a href="/">
-								<img
-									class="block h-40"
-									src="/images/icimod-logo.png"
-									alt="ICIMOD Logo"
-								/>
-							</a>
-						</div>
-						<div>
-							<nav>
-								<ul class="flex items-center">
-									<li class="mr-24">
-										<a
-											class="font-bold text-gray-darker inline-block hover:text-blue-hover"
-											href="#"
-											>Home</a
-										>
-									</li>
-									<li>
-										<a
-											class="font-bold text-gray-darker inline-block hover:text-blue-hover"
-											href="#"
-											>About HimalDoc</a
-										>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Navigation -->
-		</header>
-		<!-- End Header -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Himal Doc</title>
+    <link rel="stylesheet" href="/build/css/tailwind.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <script
+            type="module"
+            src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+</head>
+<body class="font-body antialiased text-gray-dark leading-normal">
+<!-- Header -->
+<header class="bg-white">
+    <!-- Navigation -->
+    <div class="py-24 bg-white">
+        <div class="px-16 lg:px-0 container mx-auto">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="/">
+                        <img
+                                class="block h-40"
+                                src="/images/icimod-logo.png"
+                                alt="ICIMOD Logo"
+                        />
+                    </a>
+                </div>
+                <div>
+                    <nav class="font-title">
+                        <ul class="flex items-center">
+                            <li class="mr-16">
+                                <a class="font-medium text-gray-darker inline-block hover:text-blue-hover" href="#">Home</a>
+                            </li>
+                            <li class="mr-16">
+                                <a class="font-medium text-gray-darker inline-block hover:text-blue-hover" href="#">About HimalDoc</a>
+                            </li>
+                            <li class="mr-16">
+                                <a class="font-medium text-gray-darker inline-block hover:text-blue-hover" href="#">Upload</a>
+                            </li>
+                            <li class="mr-16">
+                                <a class="font-medium text-gray-darker inline-block hover:text-blue-hover" href="#">Login</a>
+                            </li>
+                            <li>
+                                <a class="font-medium text-gray-darker inline-block hover:text-blue-hover" href="#">Register</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navigation -->
+</header>
+<!-- End Header -->
 
-		<!-- Hero Banner -->
-		<section class="bg-blue text-white h-470">
-			<div class="h-full flex items-center justify-center relative">
-				<div
-					class="absolute top-0 left-0 right-0 bottom-0"
-					style="background: #000;"
-				>
-					<img
-						class="w-full h-full object-cover"
-						src="/images/hero-banner.jpg"
-						alt="Hero Banner"
-						style="opacity: 0.8;"
-					/>
-				</div>
-				<div class="relative">
-					<div class="text-center">
-						<h1 class="px-16 text-5xl font-semibold mb-84 font-bold">
-							HimalDoc
-						</h1>
-						<p class="text-xl">
-							A one-stop portal for publications, photos and multimedia related
-							to the Hindu Kush Himalayas
-						</p>
-					</div>
-					<div class="mt-60">
-						<div class="max-w-2xl mx-auto">
-							<div>
-								<input
-									class="w-full border border-white block border-gray-default outline-none bg-white py-16 px-16 text-gray-dark"
-									type="text"
-									placeholder="Enter keywords and press enter"
-								/>
-							</div>
-						</div>
-						<ul
-							class="mt-16 flex items-center justify-center max-w-2xl mx-auto"
-						>
-							<li class="mr-4">
-								<a class="inline-block text-sm text-white" href="#"
-									>Search Tips</a
-								>
-							</li>
-							<li class="ml-16">
-								<a class="inline-block text-sm text-white" href="#"
-									>Advance Search</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Hero Banner -->
+<!-- Hero Banner -->
+<section class="bg-blue text-white h-600">
+    <div class="h-full flex items-center justify-center relative">
+        <div
+                class="absolute top-0 left-0 right-0 bottom-0"
+                style="background: #000;"
+        >
+            <img
+                    class="w-full h-full object-cover"
+                    src="/images/hero-banner.jpg"
+                    alt="Hero Banner"
+                    style="opacity: 0.8;"
+            />
+        </div>
+        <div class="relative">
+            <div class="text-center">
+                <h1 class="px-16 text-48 font-title font-semibold mb-84 font-bold">
+                    HimalDoc
+                </h1>
+                <p class="text-xl">
+                    A one-stop portal for publications, photos and multimedia related
+                    to the Hindu Kush Himalayas
+                </p>
+            </div>
+            <div class="mt-60">
+                <div class="max-w-2xl mx-auto">
+                    <div>
+                        <input
+                                class="w-full border border-white block border-gray-default outline-none bg-white py-16 px-16 text-gray-dark"
+                                type="text"
+                                placeholder="Enter keywords and press enter"
+                        />
+                    </div>
+                </div>
+                <ul
+                        class="mt-16 flex items-center justify-center max-w-2xl mx-auto"
+                >
+                    <li class="mr-4">
+                        <a class="inline-block text-sm text-white" href="#"
+                        >Search Tips</a
+                        >
+                    </li>
+                    <li class="ml-16">
+                        <a class="inline-block text-sm text-white" href="#"
+                        >Advance Search</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <!-- Section Stats -->
+            <section class="mt-60 max-w-5xl mx-auto">
+                <div class="container mx-auto py-24 bg-white text-blue">
+                    <div class="flex flex-wrap -mx-4 -mb-16">
+                        <div class="w-full md:w-1/3 mb-16 px-16 text-center">
+                            <div>
+                                <h3 class="font-medium font-title text-5xl leading-relaxed">23,912</h3>
+                                <span class="text-xl block">Documents</span>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/3 mb-16 px-16 text-center">
+                            <div>
+                                <h3 class="font-medium font-title text-5xl leading-relaxed">20,000</h3>
+                                <span class="text-xl block"
+                                >Documents viewed</span
+                                >
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/3 mb-16 px-16 text-center">
+                            <div>
+                                <h3 class="font-medium font-title text-5xl leading-relaxed">15,000</h3>
+                                <span class="text-xl block"
+                                >Documents downloaded</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section Stats -->
+        </div>
+    </div>
+</section>
+<!-- End Hero Banner -->
 
-		<!-- Section Stats -->
-		<section class="bg-blue py-32 px-16">
-			<div class="container mx-auto text-white">
-				<div class="flex flex-wrap -mx-4 -mb-16">
-					<div class="w-full md:w-1/3 mb-16 px-16 text-center">
-						<div>
-							<h3 class="font-medium text-5xl leading-relaxed">23,912</h3>
-							<span class="text-xl text-gray-light block">Documents</span>
-						</div>
-					</div>
-					<div class="w-full md:w-1/3 mb-16 px-16 text-center">
-						<div>
-							<h3 class="font-medium text-5xl leading-relaxed">20,000</h3>
-							<span class="text-xl text-gray-light block"
-								>Documents viewed</span
-							>
-						</div>
-					</div>
-					<div class="w-full md:w-1/3 mb-16 px-16 text-center">
-						<div>
-							<h3 class="font-medium text-5xl leading-relaxed">15,000</h3>
-							<span class="text-xl text-gray-light block"
-								>Documents downloaded</span
-							>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Section Stats -->
+<!-- Section About -->
+<section class="px-16 bg-gray-lighter relative py-120">
+    <div class="w-1/2 absolute top-0 right-0 bottom-0">
+        <img
+                class="w-full h-full object-cover"
+                src="/images/about-banner.png"
+                alt="Hero Banner"
+        />
+    </div>
 
-		<!-- Section About -->
-		<section class="px-16 bg-gray-lighter relative py-120">
-			<div class="w-1/2 absolute top-0 right-0 bottom-0">
-				<img
-					class="w-full h-full object-cover"
-					src="/images/about-banner.png"
-					alt="Hero Banner"
-				/>
-			</div>
+    <div class="container mx-auto">
+        <div class="flex flex-wrap relative">
+            <div class="w-1/2 relative">
+                <div class="pr-32">
+                    <h1 class="text-3xl font-title text-gray-darker font-medium mb-32 font-bold">
+                        About HimalDoc
+                    </h1>
+                    <p class="text-xl leading-relaxed">
+                        The Himalayan Document Centre (HIMALDOC) provides bibliographic
+                        information about different resources related to sustainable
+                        mountain development, as well as direct access to selected
+                        full-text and multimedia files in electronic format. The
+                        resources include books, articles, periodicals, theses,
+                        multimedia products, and other reference materials. The main
+                        collection consists of resources maintained at ICIMOD.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section About -->
 
-			<div class="container mx-auto">
-				<div class="flex flex-wrap relative">
-					<div class="w-1/2 relative">
-						<div class="pr-32">
-							<h1 class="text-3xl text-gray-darker font-medium mb-32 font-bold">
-								About HimalDoc
-							</h1>
-							<p class="text-xl leading-relaxed">
-								The Himalayan Document Centre (HIMALDOC) provides bibliographic
-								information about different resources related to sustainable
-								mountain development, as well as direct access to selected
-								full-text and multimedia files in electronic format. The
-								resources include books, articles, periodicals, theses,
-								multimedia products, and other reference materials. The main
-								collection consists of resources maintained at ICIMOD.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Section About -->
+<!-- Section Highlights -->
+<section class="px-16 bg-white relative py-120">
+    <div class="container mx-auto">
+        <h1 class="font-title font-bold text-gray-darker text-3xl text-center mb-32">Highlights</h1>
+        <div class="flex flex-wrap -mx-16">
+            <div class="w-1/2 px-16 highlights-feature">
+                <figure class="relative">
+                    <div>
+                        <img src="/images/publication-1.png" alt="">
+                    </div>
+                    <figcaption>
+                        <h2 class="leading-tight font-title font-bold text-2xl mb-24 text-gray-darker">
+                            <a class="hover:text-blue inline-block" href="">
+                                The Hindu Kush Himalaya Assessment: Mountains, Climate Change</a>
+                        </h2>
+                        <p>
+                            This open access volume is the first comprehensive assessment of the Hindu Kush Himalaya (HKH) region. It
+                            comprises important scientific research on the social, economic, and environmental pillars of sustainable </p>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="w-1/2 px-16">
+                <div class="highlights-others">
+                    <div class="flex flex-wrap flex-col">
+                        <div class="flex flex-wrap mb-24">
+                            <div>
+                                <img src="/images/publication-2.png" alt="">
+                            </div>
+                            <div class="flex-1 pl-24">
+                                <h2 class="leading-tight font-title font-bold text-2xl mb-16 text-gray-darker">
+                                    <a class="hover:text-blue inline-block" href="">
+                                        The Hindu Kush Himalaya Assessment: Mountains, Climate Change
+                                    </a>
+                                </h2>
+                                <p>
+                                    This open access volume is the first comprehensive assessment of the Hindu Kush Himalaya (HKH) region. It
+                                    comprises important scientific research on the social, economic, and environmental pillars of sustainable </p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap mb-24">
+                            <div>
+                                <img src="/images/publication-1.png" alt="">
+                            </div>
+                            <div class="flex-1 pl-24">
+                                <h2 class="leading-tight font-title font-bold text-2xl mb-16 text-gray-darker">
+                                    <a class="hover:text-blue inline-block" href="">
+                                        The Hindu Kush Himalaya Assessment: Mountains, Climate Change
+                                    </a>
+                                </h2>
+                                <p>
+                                    This open access volume is the first comprehensive assessment of the Hindu Kush Himalaya (HKH) region. It
+                                    comprises important scientific research on the social, economic, and environmental pillars of sustainable </p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap">
+                            <div>
+                                <img src="/images/publication-2.png" alt="">
+                            </div>
+                            <div class="flex-1 pl-24">
+                                <h2 class="leading-tight font-title font-bold text-2xl mb-16 text-gray-darker">
+                                    <a class="hover:text-blue inline-block" href="">
+                                        The Hindu Kush Himalaya Assessment: Mountains, Climate Change
+                                    </a>
+                                </h2>
+                                <p>
+                                    This open access volume is the first comprehensive assessment of the Hindu Kush Himalaya (HKH) region. It
+                                    comprises important scientific research on the social, economic, and environmental pillars of sustainable </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Section Highlights-->
 
-		<!-- Section Highlights -->
-		<section class="px-16 py-90">
-			<div class="container mx-auto">
-				<div class="flex flex-wrap -mx-16">
-					<div class="w-1/2 px-16">
-						<h2 class="text-base font-bold mb-16">Highlights</h2>
-						<!-- Slider main container -->
-						<div class="swiper-container">
-							<!-- Additional required wrapper -->
-							<div class="swiper-wrapper">
-								<!-- Slides -->
-								<div class="swiper-slide">
-									<div class="slider-content">
-										<div class="slider-image">
-											<img src="/images/publication-1.png" alt="" />
-										</div>
-										<div class="slider-info">
-											<h3>
-												The Hindu Kush Himalaya Assessment: Mountains, Climate Change
-											</h3>
-											<p>
-												This open access volume is the first comprehensive assessment of the Hindu Kush Himalaya (HKH) region. It comprises important scientific research on the social, economic, and environmental pillars of sustainable </p>
-											</p>
-											<a href="#">Read More</a>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="slider-content">
-										<div class="slider-image">
-											<img src="/images/publication-2.png" alt="" />
-										</div>
-										<div class="slider-info">
-											<h3>
-												Summary of the Hindu Kush Himalaya Assessment Report
-											</h3>
-											<p>
-												This open access volume is the first comprehensive
-												assessment of the Hindu Kush Himlayan (KHK) region.
-											</p>
-											<a href="#">Read More</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- If we need pagination -->
-							<div class="swiper-pagination"></div>
+<!--Section Uploads-->
+<section class="px-16 bg-gray-lighter relative py-120 uploads">
+    <div class="container mx-auto">
+        <h1 class="font-title font-bold text-gray-darker text-3xl text-center mb-32">Recent Uploads</h1>
+        <div class="flex flex-wrap -mx-16">
+            <div class="w-1/4 px-16">
+                <figure>
+                    <div class="mb-8">
+                        <img class="w-full object-cover" src="/images/publication-2.png" alt="">
+                    </div>
+                    <figcaption>
+                        <h2 class="leading-tight font-title font-bold text-xl text-gray-darker">
+                            <a class="hover:text-blue inline-block" href="">
+                                The Hindu Kush Himalaya Assessment: Mountains, Climate Change</a>
+                        </h2>
+                        <div class="mt-24">
+                            <a class="inline-block uppercase font-bold font-title text-blue" href="#">Read More</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="w-1/4 px-16">
+                <figure>
+                    <div class="mb-8">
+                        <img class="w-full object-cover" src="/images/publication-1.png" alt="">
+                    </div>
+                    <figcaption>
+                        <h2 class="leading-tight font-title font-bold text-xl text-gray-darker">
+                            <a class="hover:text-blue inline-block" href="">
+                                The Hindu Kush Himalaya Assessment: Mountains, Climate Change</a>
+                        </h2>
+                        <div class="mt-24">
+                            <a class="inline-block uppercase font-bold font-title text-blue" href="#">Read More</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="w-1/4 px-16">
+                <figure>
+                    <div class="mb-8">
+                        <img class="w-full object-cover" src="/images/publication-2.png" alt="">
+                    </div>
+                    <figcaption>
+                        <h2 class="leading-tight font-title font-bold text-xl text-gray-darker">
+                            <a class="hover:text-blue inline-block" href="">
+                                The Hindu Kush Himalaya Assessment: Mountains, Climate Change</a>
+                        </h2>
+                        <div class="mt-24">
+                            <a class="inline-block uppercase font-bold font-title text-blue" href="#">Read More</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="w-1/4 px-16">
+                <figure>
+                    <div class="mb-8">
+                        <img class="w-full object-cover" src="/images/publication-1.png" alt="">
+                    </div>
+                    <figcaption>
+                        <h2 class="leading-tight font-title font-bold text-xl text-gray-darker">
+                            <a class="hover:text-blue inline-block" href="">
+                                The Hindu Kush Himalaya Assessment: Mountains, Climate Change</a>
+                        </h2>
+                        <div class="mt-24">
+                            <a class="inline-block uppercase font-bold font-title text-blue" href="#">Read More</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Section Uploads-->
 
-							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-						</div>
-					</div>
-					<div class="w-1/2 px-16">
-						<h2 class="text-base font-bold mb-16">Latest Uploads</h2>
-						<div class="flex flex-wrap -mx-16 -mb-24">
-							<div class="w-1/2 px-16 mb-24">
-								<div class="flex flex-wrap">
-									<div class="upload-img">
-										<img
-											class="inline-block object-cover"
-											src="https://via.placeholder.com/110x150"
-											alt=""
-										/>
-									</div>
-									<div class="flex-1 pl-8">
-										<h2>
-											<a href="#" class="text-blue underline inline-block"
-												>The Hindu Kush Himalayan</a
-											>
-										</h2>
-									</div>
-								</div>
-							</div>
-							<div class="w-1/2 px-16 mb-24">
-								<div class="flex flex-wrap">
-									<div class="upload-img">
-										<img
-											class="inline-block object-cover"
-											src="https://via.placeholder.com/110x150"
-											alt=""
-										/>
-									</div>
-									<div class="flex-1 pl-8">
-										<h2>
-											<a href="#" class="text-blue underline inline-block"
-												>The Hindu Kush Himalayan</a
-											>
-										</h2>
-									</div>
-								</div>
-							</div>
-							<div class="w-1/2 px-16 mb-24">
-								<div class="flex flex-wrap">
-									<div class="upload-img">
-										<img
-											class="inline-block object-cover"
-											src="https://via.placeholder.com/110x150"
-											alt=""
-										/>
-									</div>
-									<div class="flex-1 pl-8">
-										<h2>
-											<a href="#" class="text-blue underline inline-block"
-												>The Hindu Kush Himalayan</a
-											>
-										</h2>
-									</div>
-								</div>
-							</div>
-							<div class="w-1/2 px-16 mb-24">
-								<div class="flex flex-wrap">
-									<div class="upload-img">
-										<img
-											class="inline-block object-cover"
-											src="https://via.placeholder.com/110x150"
-											alt=""
-										/>
-									</div>
-									<div class="flex-1 pl-8">
-										<h2>
-											<a href="#" class="text-blue underline inline-block"
-												>The Hindu Kush Himalayan</a
-											>
-										</h2>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Section Highlights -->
+<!-- Section Highlights -->
+<!--<section class="px-16 py-90">-->
+    <!--<div class="container mx-auto">-->
+        <!--<div class="flex flex-wrap -mx-16">-->
+            <!--<div class="w-1/2 px-16">-->
+                <!--<h2 class="text-base font-bold mb-16">Highlights</h2>-->
+                <!--&lt;!&ndash; Slider main container &ndash;&gt;-->
+                <!--<div class="swiper-container">-->
+                    <!--&lt;!&ndash; Additional required wrapper &ndash;&gt;-->
+                    <!--<div class="swiper-wrapper">-->
+                        <!--&lt;!&ndash; Slides &ndash;&gt;-->
+                        <!--<div class="swiper-slide">-->
+                            <!--<div class="slider-content">-->
+                                <!--<div class="slider-image">-->
+                                    <!--<img src="/images/publication-1.png" alt="" />-->
+                                <!--</div>-->
+                                <!--<div class="slider-info">-->
+                                    <!--<h3>-->
+                                        <!--The Hindu Kush Himalaya Assessment: Mountains, Climate Change-->
+                                    <!--</h3>-->
+                                    <!--<p>-->
+                                        <!--This open access volume is the first comprehensive assessment of the Hindu Kush Himalaya (HKH) region. It-->
+                                        <!--comprises important scientific research on the social, economic, and environmental pillars of sustainable </p>-->
+                                    <!--</p>-->
+                                    <!--<a href="#">Read More</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide">-->
+                            <!--<div class="slider-content">-->
+                                <!--<div class="slider-image">-->
+                                    <!--<img src="/images/publication-2.png" alt="" />-->
+                                <!--</div>-->
+                                <!--<div class="slider-info">-->
+                                    <!--<h3>-->
+                                        <!--Summary of the Hindu Kush Himalaya Assessment Report-->
+                                    <!--</h3>-->
+                                    <!--<p>-->
+                                        <!--This open access volume is the first comprehensive-->
+                                        <!--assessment of the Hindu Kush Himlayan (KHK) region.-->
+                                    <!--</p>-->
+                                    <!--<a href="#">Read More</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; If we need pagination &ndash;&gt;-->
+                    <!--<div class="swiper-pagination"></div>-->
 
-		<!-- Section Browse -->
-		<section class="bg-gray-lighter py-90 px-16">
-			<div class="container mx-auto">
-				<div class="text-center mb-60">
-					<span
-						class="block uppercase tracking-wide text-blue font-thin text-sm"
-						>Browse</span
-					>
-					<!-- <h2 class="text-gray-darker font-bold text-3xl">
-						Choose your selection
-					</h2> -->
-				</div>
+                    <!--&lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+                    <!--<div class="swiper-button-prev"></div>-->
+                    <!--<div class="swiper-button-next"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="w-1/2 px-16">-->
+                <!--<h2 class="text-base font-bold mb-16">Latest Uploads</h2>-->
+                <!--<div class="flex flex-wrap -mx-16 -mb-24">-->
+                    <!--<div class="w-1/2 px-16 mb-24">-->
+                        <!--<div class="flex flex-wrap">-->
+                            <!--<div class="upload-img">-->
+                                <!--<img-->
+                                        <!--class="inline-block object-cover"-->
+                                        <!--src="https://via.placeholder.com/110x150"-->
+                                        <!--alt=""-->
+                                <!--/>-->
+                            <!--</div>-->
+                            <!--<div class="flex-1 pl-8">-->
+                                <!--<h2>-->
+                                    <!--<a href="#" class="text-blue underline inline-block"-->
+                                    <!--&gt;The Hindu Kush Himalayan</a-->
+                                    <!--&gt;-->
+                                <!--</h2>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="w-1/2 px-16 mb-24">-->
+                        <!--<div class="flex flex-wrap">-->
+                            <!--<div class="upload-img">-->
+                                <!--<img-->
+                                        <!--class="inline-block object-cover"-->
+                                        <!--src="https://via.placeholder.com/110x150"-->
+                                        <!--alt=""-->
+                                <!--/>-->
+                            <!--</div>-->
+                            <!--<div class="flex-1 pl-8">-->
+                                <!--<h2>-->
+                                    <!--<a href="#" class="text-blue underline inline-block"-->
+                                    <!--&gt;The Hindu Kush Himalayan</a-->
+                                    <!--&gt;-->
+                                <!--</h2>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="w-1/2 px-16 mb-24">-->
+                        <!--<div class="flex flex-wrap">-->
+                            <!--<div class="upload-img">-->
+                                <!--<img-->
+                                        <!--class="inline-block object-cover"-->
+                                        <!--src="https://via.placeholder.com/110x150"-->
+                                        <!--alt=""-->
+                                <!--/>-->
+                            <!--</div>-->
+                            <!--<div class="flex-1 pl-8">-->
+                                <!--<h2>-->
+                                    <!--<a href="#" class="text-blue underline inline-block"-->
+                                    <!--&gt;The Hindu Kush Himalayan</a-->
+                                    <!--&gt;-->
+                                <!--</h2>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="w-1/2 px-16 mb-24">-->
+                        <!--<div class="flex flex-wrap">-->
+                            <!--<div class="upload-img">-->
+                                <!--<img-->
+                                        <!--class="inline-block object-cover"-->
+                                        <!--src="https://via.placeholder.com/110x150"-->
+                                        <!--alt=""-->
+                                <!--/>-->
+                            <!--</div>-->
+                            <!--<div class="flex-1 pl-8">-->
+                                <!--<h2>-->
+                                    <!--<a href="#" class="text-blue underline inline-block"-->
+                                    <!--&gt;The Hindu Kush Himalayan</a-->
+                                    <!--&gt;-->
+                                <!--</h2>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<!-- End Section Highlights -->
 
-				<div class="max-w-4xl mx-auto">
-					<div class="flex flex-wrap -mx-16 -mb-16">
-						<div class="w-full md:w-1/3 px-16 mb-16">
-							<div class="h-full bg-white shadow-lg p-24 rounded">
-								<div>
-									<h3 class="text-sm font-semibold pb-8 border-b">Browse By Type</h3>
-									<ul class="mt-8">
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>ICIMOD Publications
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(7,206)</span
-												>
-											</a>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Articles, Reports, Theses
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(12,725)</span
-												>
-											</a>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Books, Proceedings
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(4,172)</span
-												></a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Maps, Atlases
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(10)</span
-												></a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Statistical Documents
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(121)</span
-												></a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Periodicals
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(319)</span
-												></a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Multimedia
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(207)</span
-												></a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Internal Resources
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(294)</span
-												></a
-											>
-										</li>
-										<li>
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>ICIMOD Photo Gallery
-												<span
-													class="inline-block ml-8 mtext-xs font-medium text-gray-default"
-													>(3,075)</span
-												></a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="w-full md:w-1/3 px-16 mb-16">
-							<div class="h-full bg-white shadow-lg p-24 rounded">
-								<div>
-									<h3 class="text-sm font-semibold pb-8 border-b">
-										Browse by Special Collections
-									</h3>
-									<ul class="mt-8">
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>ICIMOD Staff Contributions</a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Adaptation and Resilience Building</a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Transboundary Landscapes</a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>River Basins and Cryosphere</a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Atmosphere</a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>SERVIRHKH</a
-											>
-										</li>
-										<li>
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>MKAN</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="w-full md:w-1/3 px-16 mb-16">
-							<div class="h-full bg-white shadow-lg p-24 rounded">
-								<div>
-									<h3 class="text-sm font-semibold pb-8 border-b">
-										Useful Links
-									</h3>
-									<ul class="mt-8">
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>Research 4 life</a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>RDS</a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>XYZ</a
-											>
-										</li>
-										<li class="mb-8">
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>ABC</a
-											>
-										</li>
-										<li>
-											<a
-												class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
-												href="#"
-												>GFG</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Section Browse -->
+<!-- Section Browse -->
+<section class="bg-white py-90 px-16">
+    <div class="container mx-auto">
+        <div class="text-center mb-60">
+            <h2 class="text-gray-darker font-bold font-title text-3xl">Browse</h2>
+        </div>
 
-		<!-- Footer Section -->
-		<footer class="py-60 px-16 bg-gray-light">
-			<div class="container mx-auto px-8">
-				<div>
-					<div class="flex flex-wrap -mx-8 -mb-24">
-						<div class="w-full md:w-1/2 lg:w-1/4 px-8 mb-24">
-							<div>
-								<div>
-									<a class="inline-block mb-24" href="/">
-										<img
-											class="inline-block h-48"
-											src="/images/icimod-logo.png"
-											alt="ICIMOD Logo"
-											title="ICIMOD Logo"
-										/>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="w-full md:w-1/2 lg:w-1/4 px-8 mb-24">
-							<div>
-								<div>
-									<h3 class="mb-8 text-black-dark font-semibold">
-										Menu
-									</h3>
-									<ul>
-										<li class="mb-8">
-											<a class="hover:text-blue-hover" href="#">About</a>
-										</li>
-										<li>
-											<a class="hover:text-blue-hover" href="#"
-												>About HimalDoc</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="w-full md:w-1/2 lg:w-1/4 px-8 mb-24">
-							<div>
-								<div>
-									<h3 class="mb-8 text-black-dark font-semibold">
-										Useful Links
-									</h3>
-									<ul>
-										<li class="mb-8">
-											<a class="hover:text-blue-hover" href="#"
-												>Research for life</a
-											>
-										</li>
-										<li>
-											<a class="hover:text-blue-hover" href="#">RDS</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="w-full md:w-1/2 lg:w-1/4 px-8 mb-24">
-							<div>
-								<div>
-									<h3 class="mb-8 text-black-dark font-semibold">
-										Social Links
-									</h3>
-									<ul class="flex">
-										<li class="flex items-center mr-16">
-											<a
-												class="flex items-center w-24 h-24 bg-blue text-white rounded-full flex justify-center"
-												href="https://www.facebook.com/GurkhaMortgagesFrimley/"
-												target="_blank"
-												title="Facebook"
-											>
-												<ion-icon name="logo-facebook"></ion-icon>
-											</a>
-										</li>
-										<li class="flex items-center mr-16">
-											<a
-												class="fflex items-center w-24 h-24 bg-blue text-white rounded-full flex justify-center"
-												href="https://twitter.com/MU_Mortgages"
-												target="_blank"
-												title="Twitter"
-											>
-												<ion-icon name="logo-twitter"></ion-icon>
-											</a>
-										</li>
-										<li class="flex items-center">
-											<a
-												class="flex items-center w-24 h-24 bg-blue text-white rounded-full flex justify-center"
-												href="https://www.linkedin.com/in/michael-usher-158172a"
-												target="_blank"
-												title="Linkedin"
-											>
-												<ion-icon name="logo-linkedin"></ion-icon>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="mt-60">
-				<div class="container mx-auto px-8">
-					<div>
-						<div class="text-center">
-							<div class="text-gray-dark">
-								<p>
-									Copyright © 2019
-									<a href="#">ICIMOD</a>. All Rights Reserved.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- End Footer Section -->
-	</body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-	<script src="/build/js/script.js"></script>
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap -mx-16 -mb-16">
+                <div class="w-full md:w-1/4 px-16 mb-16">
+                    <div class="h-full">
+                        <div>
+                            <h3 class="text-lg text-gray-darker font-semibold pb-8 border-b font-title">Browse By Type</h3>
+                            <ul class="mt-8 pl-16">
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >ICIMOD Publications
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(7,206)</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Articles, Reports, Theses
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(12,725)</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Books, Proceedings
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(4,172)</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Maps, Atlases
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(10)</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Statistical Documents
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(121)</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Periodicals
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(319)</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Multimedia
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(207)</span
+                                        ></a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Internal Resources
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(294)</span
+                                        ></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >ICIMOD Photo Gallery
+                                        <span
+                                                class="inline-block ml-8 mtext-xs font-medium text-gray-default"
+                                        >(3,075)</span
+                                        ></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-16 mb-16">
+                    <div class="h-full">
+                        <div>
+                            <h3 class="text-lg text-gray-darker font-semibold pb-8 border-b font-title">
+                                Browse by special collections
+                            </h3>
+                            <ul class="mt-8 pl-16">
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >ICIMOD Staff Contributions</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Adaptation and Resilience Building</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Transboundary Landscapes</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >River Basins and Cryosphere</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Atmosphere</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >SERVIRHKH</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >MKAN</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-16 mb-16">
+                    <div class="h-full">
+                        <div>
+                            <h3 class="text-lg text-gray-darker font-semibold pb-8 border-b font-title">
+                                Browse HUC Libraries
+                            </h3>
+                            <ul class="mt-8 pl-16">
+                                <li class="mb-8">
+                                    <a class="font-semibold inline-block text-blue hover:text-blue-hover text-sm" href="#">RUB</a>
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >TERI</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >TU</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >KU</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >GFG</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-16 mb-16">
+                    <div class="h-full">
+                        <div>
+                            <h3 class="text-lg text-gray-darker font-semibold pb-8 border-b font-title">
+                                Useful Links
+                            </h3>
+                            <ul class="mt-8 pl-16">
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Research 4 life</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >DOAJ</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >Mendeley</a
+                                    >
+                                </li>
+                                <li class="mb-8">
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >AuthorAid</a>
+                                </li>
+                                <li>
+                                    <a
+                                            class="font-semibold inline-block text-blue hover:text-blue-hover text-sm"
+                                            href="#"
+                                    >SHERPA/RoMEO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section Browse -->
+
+<!-- Footer Section -->
+<footer class="py-60 px-16 bg-gray-light">
+    <div class="container mx-auto px-8">
+        <div>
+            <div class="flex flex-wrap -mx-8 -mb-24">
+                <div class="w-full md:w-1/2 lg:w-1/4 px-8 mb-24">
+                    <div>
+                        <div>
+                            <a class="inline-block mb-24" href="/">
+                                <img
+                                        class="inline-block h-48"
+                                        src="/images/icimod-logo.png"
+                                        alt="ICIMOD Logo"
+                                        title="ICIMOD Logo"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 px-8 mb-24">
+                    <div>
+                        <div>
+                            <h3 class="mb-8 text-gray-darker font-semibold font-title">
+                                Menu
+                            </h3>
+                            <ul>
+                                <li class="mb-8">
+                                    <a class="hover:text-blue-hover" href="#">About</a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-blue-hover" href="#"
+                                    >About HimalDoc</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 px-8 mb-24">
+                    <div>
+                        <div>
+                            <h3 class="mb-8 text-gray-darker font-semibold font-title">
+                                Useful Links
+                            </h3>
+                            <ul>
+                                <li class="mb-8">
+                                    <a class="hover:text-blue-hover" href="#"
+                                    >Research for life</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="hover:text-blue-hover" href="#">RDS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 px-8 mb-24">
+                    <div>
+                        <div>
+                            <h3 class="mb-8 text-gray-darker font-semibold font-title">
+                                Social Links
+                            </h3>
+                            <ul class="flex">
+                                <li class="flex items-center mr-16">
+                                    <a
+                                            class="flex items-center w-24 h-24 bg-blue text-white rounded-full flex justify-center"
+                                            href="https://www.facebook.com/GurkhaMortgagesFrimley/"
+                                            target="_blank"
+                                            title="Facebook"
+                                    >
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                                <li class="flex items-center mr-16">
+                                    <a
+                                            class="fflex items-center w-24 h-24 bg-blue text-white rounded-full flex justify-center"
+                                            href="https://twitter.com/MU_Mortgages"
+                                            target="_blank"
+                                            title="Twitter"
+                                    >
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
+                                <li class="flex items-center">
+                                    <a
+                                            class="flex items-center w-24 h-24 bg-blue text-white rounded-full flex justify-center"
+                                            href="https://www.linkedin.com/in/michael-usher-158172a"
+                                            target="_blank"
+                                            title="Linkedin"
+                                    >
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-60">
+        <div class="container mx-auto px-8">
+            <div>
+                <div class="text-center">
+                    <div class="text-gray-dark">
+                        <p>
+                            Copyright © 2019
+                            <a href="#">ICIMOD</a>. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer Section -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+<script src="/build/js/script.js"></script>
 </html>

@@ -1,8 +1,10 @@
 module.exports = {
 	theme: {
 		fontFamily: {
-			body: ["Source Sans Pro", "sans-serif"]
+			body: ["Source Serif Pro", "serif"],
+			title: ["Source Sans Pro", "sans-serif"]
 		},
+		
 		colors: {
 			"gray-lighter": "#f1f2f2",
 			"gray-light": "#e6e7e8",
@@ -24,9 +26,14 @@ module.exports = {
 			"60": "60px",
 			"90": "90px",
 			"120": "120px",
-			"470": "470px"
+			"470": "470px",
+			"600": "600px",
 		},
-		extend: {}
+		extend: {
+			fontSize: {
+				'48': "48px"
+			},
+		}
 	},
 	variants: {},
 	plugins: []
