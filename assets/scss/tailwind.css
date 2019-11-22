@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-content {
+    display: flex;
+}
+
+.slider-image {
+    width: 200px;
+    height: 300px;
+}
+
+.slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-info {
+    flex: 1;
+    padding-left: 24px;
+}
+
+.slider-info h3 {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.slider-info a {
+    display: inline-block;
+    margin-top: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.upload-img {
+    width: 110px;
+}
+
+.upload-img img {
+    height: 150px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #046cb6 !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 24px !important;
+}
